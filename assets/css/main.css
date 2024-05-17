@@ -188,6 +188,9 @@ input[type="checkbox"]:before {
 }
 
 @media screen and (max-width: 768px) {
+  .btn {
+    padding: 0.6rem 4rem;
+  }
   #floorplanSlider .slick-list {
     margin-left: -158px;
   }
