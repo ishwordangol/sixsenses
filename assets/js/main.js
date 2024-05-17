@@ -75,4 +75,6 @@ function updatePhoneNumber() {
 // Initialize the input with the default country code and flag
 updatePhoneNumber();
 
+$(window).scrollTop(0);
+
 
