@@ -73,24 +73,6 @@ $(window).scrollTop(0);
 
 // popup
 
-// $('#download-popup').click(function (event) {
-//   event.preventDefault();
-//   $('#popup').removeClass('hidden').hide().fadeIn().find('#popup-content').css('transform', 'scale(1)');
-// });
-
-// $('#close-popup, #popup').click(function (event) {
-//   if (event.target.id === 'close-popup' || event.target.id === 'popup') {
-//     $('#popup').fadeOut(function () {
-//       $(this).addClass('hidden').find('#popup-content').css('transform', 'scale(0.95)');
-//     });
-//   }
-// });
-
-// $('#popup-content').click(function (event) {
-//   event.stopPropagation();
-// });
-
-// Open popup
 $('.download-popup').click(function (event) {
   event.preventDefault();
   $('#popup').removeClass('hidden').hide().fadeIn().find('#popup-content').css('transform', 'scale(1)');
@@ -105,16 +87,11 @@ $('#close-popup').click(function () {
 
 // Close popup on clicking outside the popup content
 $('#popup').click(function (event) {
-  if (!$(event.target).closest('#popup-content').length) {
+  if (event.target === this) {
     $('#popup').fadeOut(function () {
       $(this).addClass('hidden').find('#popup-content').css('transform', 'scale(0.95)');
     });
   }
-});
-
-// Prevent closing when clicking inside the popup content
-$('#popup-content').click(function (event) {
-  event.stopPropagation();
 });
 
 
