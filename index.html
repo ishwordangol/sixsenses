@@ -19,7 +19,8 @@
       rel="stylesheet"
     />
     
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
       rel="stylesheet"
@@ -36,7 +37,7 @@
       type="text/css"
       media="all"
     />
-    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!-- <link rel="stylesheet" href="assets/css/nice-select.css" /> -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
 
@@ -448,7 +449,23 @@
                 </select>
             </div>
           </div> -->
-          <div class="form-groups relative">
+          
+          <div class="relative">
+            <div class="h-full flex items-center absolute left-5 top-1/2 -translate-y-1/2">
+            <div class="flag-container">
+                <span id="selected-flag" class="text-xl flag-icon flag-icon-ae mr-2"></span>
+            </div>
+            <select id="country-code" class="country-code-dropdown mr-2 py-2.5 bg-transparent w-16 text-white/50">
+                <option value="+1" data-flag="ae" class="text-black">+971</option>
+                <option value="+44" data-flag="gb" class="text-black">+44</option>
+                <option value="+91" data-flag="in" class="text-black">+91</option>
+                <!-- Add more countries as needed -->
+            </select>
+           
+        </div>
+        <input type="tel" id="phone-number" class="w-full py-2.5 px-5 pl-32 bg-transparent  border border-inputborder outline-none focus:border-primary text-white">
+      </div>
+          <!-- <div class="form-groups relative">
             <input
             type="number"
             class="text-white w-full py-2.5 px-5 pl-20 bg-transparent border border-inputborder outline-none focus:border-primary placeholder:text-white/50"
@@ -460,7 +477,7 @@
                
             </select>
         </div>
-        </div>
+        </div> -->
           <div class="form-groups">
             <input
             type="email"
@@ -560,12 +577,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- <script src="assets/js/jquery.nice-select.js"></script> -->
     <script src="assets/js/main.js"></script>
     <script>
-      $(function () {
-        $("select").niceSelect();
-      });
+      // $(function () {
+      //   $("select").niceSelect();
+      // });
       AOS.init();
     </script>
   </body>

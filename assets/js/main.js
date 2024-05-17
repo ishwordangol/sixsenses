@@ -57,4 +57,25 @@ $("#floorplanSlider").slick({
   ],
 });
 
+const $countryCodeSelect = $('#country-code');
+const $phoneNumberInput = $('#phone-number');
+const $selectedFlag = $('#selected-flag');
+
+$countryCodeSelect.on('change', updatePhoneNumber);
+
+function updatePhoneNumber() {
+  const selectedOption = $countryCodeSelect.find(':selected');
+  const countryCode = selectedOption.val();
+  const flagClass = 'flag-icon-' + selectedOption.data('flag');
+  const currentNumber = $phoneNumberInput.val().replace(/^\+\d+ /, '');
+  $phoneNumberInput.val(countryCode + ' ' + currentNumber);
+  $phoneNumberInput.focus();
+
+  // Update the flag icon
+  $selectedFlag.attr('class', 'flag-icon ' + flagClass);
+}
+
+// Initialize the input with the default country code and flag
+updatePhoneNumber();
+
 
