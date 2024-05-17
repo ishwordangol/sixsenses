@@ -224,14 +224,14 @@ input[type="checkbox"]:before {
   margin: 0;
 }
 
-@media screen and (max-width: 1366px) {
-}
-
-@media screen and (max-width: 1024px) {
-}
-
 @media screen and (max-width: 768px) {
+  #floorplanSlider .slick-list {
+    margin-left: -158px;
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
+  #floorplanSlider .slick-list {
+    margin-left: -158px;
+  }
 }

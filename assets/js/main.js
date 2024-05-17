@@ -16,38 +16,32 @@ $("#floorplanSlider").slick({
     {
       breakpoint: 1280,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 640,
-      settings: {
-        arrows: false,
-        slidesToShow: 2,
+        centerMode: true,
+        centerPadding: '150px',
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        arrows: false,
-        slidesToShow: 2,
+        centerMode: true,
+        centerPadding: '50px',
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
