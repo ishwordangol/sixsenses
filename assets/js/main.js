@@ -1,7 +1,4 @@
 
-// nice select
-$("select").niceSelect();
-
 // featured sliders
 $("#floorplanSlider").slick({
   dots: true,
